@@ -1,6 +1,6 @@
 const fetchProblemOfTheDay = async () => {
   try {
-    const response = await fetch("http://localhost:5000/api/leetcode-pod");
+    const response = await fetch("https://algo-hub-six.vercel.app/api/leetcode-pod");
     if (!response.ok) throw new Error("Failed to fetch PoD");
 
     const data = await response.json();
